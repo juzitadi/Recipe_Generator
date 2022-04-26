@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="flowchart" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_15u5AMPVEeyyN8-CHjQCxA" type="Recipe" name="baking.recipe_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_UqIcYMPcEeyNs4kwx4oFlw" type="2001" fontName="Bell MT" bold="true" fillColor="10265827">
+    <children xmi:type="notation:DecorationNode" xmi:id="_UqIcYsPcEeyNs4kwx4oFlw" type="5001"/>
+    <element xmi:type="SpeakAction" href="baking.recipe#//@steps.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UqIcYcPcEeyNs4kwx4oFlw" x="255" y="30" width="301" height="46"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_pRoE0MPcEeyNs4kwx4oFlw" type="2001" fontName="Bell MT" bold="true" fillColor="10265827">
+    <children xmi:type="notation:DecorationNode" xmi:id="_pRoE0sPcEeyNs4kwx4oFlw" type="5001"/>
+    <element xmi:type="SpeakAction" href="baking.recipe#//@steps.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pRoE0cPcEeyNs4kwx4oFlw" x="240" y="990" width="316" height="46"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_H8mkYMPdEeyhB6X8hOAEuw" type="2002" fontName="Bell MT" bold="true" fillColor="8905185">
+    <children xmi:type="notation:DecorationNode" xmi:id="_H8wVYMPdEeyhB6X8hOAEuw" type="5002"/>
+    <element xmi:type="InstructionAction" href="baking.recipe#//@steps.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H8mkYcPdEeyhB6X8hOAEuw" x="270" y="105" width="271" height="46"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_S4MIMMPdEeyhB6X8hOAEuw" type="2003" fontName="Bell MT" bold="true" fillColor="13420443">
+    <children xmi:type="notation:DecorationNode" xmi:id="_S4MIM8PdEeyhB6X8hOAEuw" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_S4RnwMPdEeyhB6X8hOAEuw" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_XJ08gMPdEeyhB6X8hOAEuw" type="3001" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_XJ08gsPdEeyhB6X8hOAEuw" type="5006"/>
+        <element xmi:type="Ingredient" href="baking.recipe#//@steps.3/@variables.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XJ08gcPdEeyhB6X8hOAEuw" x="5" y="-6" width="196" height="40"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_nw-U8MPdEeyhB6X8hOAEuw" type="3001" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_nw-U8sPdEeyhB6X8hOAEuw" type="5006"/>
+        <element xmi:type="Ingredient" href="baking.recipe#//@steps.3/@variables.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nw-U8cPdEeyhB6X8hOAEuw" x="5" y="33" width="196" height="46"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_wwKdgMPdEeyhB6X8hOAEuw" type="3001" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_wwKdgsPdEeyhB6X8hOAEuw" type="5006"/>
+        <element xmi:type="Ingredient" href="baking.recipe#//@steps.3/@variables.2"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wwKdgcPdEeyhB6X8hOAEuw" x="215" y="-11" width="196" height="46"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_z2UWIMPdEeyhB6X8hOAEuw" type="3001" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_z2UWIsPdEeyhB6X8hOAEuw" type="5006"/>
+        <element xmi:type="Ingredient" href="baking.recipe#//@steps.3/@variables.3"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z2UWIcPdEeyhB6X8hOAEuw" x="215" y="34" width="196" height="46"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_SxHaYMPeEeyhB6X8hOAEuw" type="3001" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_SxHaYsPeEeyhB6X8hOAEuw" type="5006"/>
+        <element xmi:type="Ingredient" href="baking.recipe#//@steps.3/@variables.4"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SxHaYcPeEeyhB6X8hOAEuw" x="5" y="74" width="196" height="46"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_TufooMPeEeyhB6X8hOAEuw" type="3001" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_TufoosPeEeyhB6X8hOAEuw" type="5006"/>
+        <element xmi:type="Ingredient" href="baking.recipe#//@steps.3/@variables.5"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TufoocPeEeyhB6X8hOAEuw" x="5" y="119" width="196" height="46"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_VSOsQMPeEeyhB6X8hOAEuw" type="3001" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_VSOsQsPeEeyhB6X8hOAEuw" type="5006"/>
+        <element xmi:type="Ingredient" href="baking.recipe#//@steps.3/@variables.6"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VSOsQcPeEeyhB6X8hOAEuw" x="215" y="74" width="196" height="46"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_WVzpIMPeEeyhB6X8hOAEuw" type="3001" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_WVzpIsPeEeyhB6X8hOAEuw" type="5006"/>
+        <element xmi:type="Ingredient" href="baking.recipe#//@steps.3/@variables.7"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WVzpIcPeEeyhB6X8hOAEuw" x="215" y="119" width="196" height="46"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_S4MIMcPdEeyhB6X8hOAEuw"/>
+    <element xmi:type="InputAction" href="baking.recipe#//@steps.3"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S4MIMsPdEeyhB6X8hOAEuw" x="195" y="180" width="451" height="136"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Fh94gMPeEeyhB6X8hOAEuw" type="2002" fontName="Bell MT" bold="true" fillColor="8905185">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Fh94gsPeEeyhB6X8hOAEuw" type="5002"/>
+    <element xmi:type="InstructionAction" href="baking.recipe#//@steps.4"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Fh94gcPeEeyhB6X8hOAEuw" x="270" y="345" width="286" height="46"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_lSXIAMPeEeyhB6X8hOAEuw" type="2003" fontName="Bell MT" bold="true" fillColor="13420443">
+    <children xmi:type="notation:DecorationNode" xmi:id="_lSXIA8PeEeyhB6X8hOAEuw" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_lSXIBMPeEeyhB6X8hOAEuw" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_rD628MPeEeyhB6X8hOAEuw" type="3002" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_rD628sPeEeyhB6X8hOAEuw" type="5007"/>
+        <element xmi:type="Device" href="baking.recipe#//@steps.5/@variables.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rD628cPeEeyhB6X8hOAEuw" x="20" y="-6" width="151" height="46"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_u2qIwMPeEeyhB6X8hOAEuw" type="3002" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_u2qIwsPeEeyhB6X8hOAEuw" type="5007"/>
+        <element xmi:type="Device" href="baking.recipe#//@steps.5/@variables.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u2qIwcPeEeyhB6X8hOAEuw" x="20" y="48" width="151" height="46"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_1y13wMPeEeyhB6X8hOAEuw" type="3002" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_1y13wsPeEeyhB6X8hOAEuw" type="5007"/>
+        <element xmi:type="Device" href="baking.recipe#//@steps.5/@variables.2"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1y13wcPeEeyhB6X8hOAEuw" x="200" y="-2" width="151" height="41"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_lSXIAcPeEeyhB6X8hOAEuw"/>
+    <element xmi:type="InputAction" href="baking.recipe#//@steps.5"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lSXIAsPeEeyhB6X8hOAEuw" x="195" y="420" width="481" height="121"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Pc-ToMPfEeyhB6X8hOAEuw" type="2002" fontName="Bell MT" bold="true" fillColor="8905185">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Pc-TosPfEeyhB6X8hOAEuw" type="5002"/>
+    <element xmi:type="InstructionAction" href="baking.recipe#//@steps.6"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pc-TocPfEeyhB6X8hOAEuw" x="285" y="570" width="286" height="46"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_YmI3kMPfEeyhB6X8hOAEuw" type="2003" fontName="Bell MT" bold="true" fillColor="13420443">
+    <children xmi:type="notation:DecorationNode" xmi:id="_YmI3k8PfEeyhB6X8hOAEuw" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_YmI3lMPfEeyhB6X8hOAEuw" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_AYuhQMPzEeyS6vRXS0Qo4A" type="3003" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_AYuhQsPzEeyS6vRXS0Qo4A" type="5009"/>
+        <element xmi:type="Taste" href="baking.recipe#//@steps.7/@variables.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AYuhQcPzEeyS6vRXS0Qo4A" x="35" y="10" width="165" height="60"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_YmI3kcPfEeyhB6X8hOAEuw"/>
+    <element xmi:type="InputAction" href="baking.recipe#//@steps.7"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YmI3ksPfEeyhB6X8hOAEuw" x="285" y="660" width="270" height="75"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_Orp0UMPzEeyS6vRXS0Qo4A" type="2005">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Orp0VcPzEeyS6vRXS0Qo4A" type="5005"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_Orp0UcPzEeyS6vRXS0Qo4A"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Orp0UsPzEeyS6vRXS0Qo4A" fontName="Bell MT" bold="true"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_Orp0U8PzEeyS6vRXS0Qo4A"/>
+    <element xmi:type="Decision" href="baking.recipe#//@steps.8"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Orp0VMPzEeyS6vRXS0Qo4A" x="300" y="780" width="285" height="75"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_4yX-cMPzEeyS6vRXS0Qo4A" type="2006" fontName="Bell MT" bold="true" fillColor="8047085">
+    <children xmi:type="notation:DecorationNode" xmi:id="_4yX-csPzEeyS6vRXS0Qo4A" type="5008"/>
+    <element xmi:type="RecipeAction" href="baking.recipe#//@steps.9"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4yX-ccPzEeyS6vRXS0Qo4A" x="255" y="885" width="346" height="76"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_15u5AcPVEeyyN8-CHjQCxA"/>
+  <element xmi:type="Model" href="baking.recipe#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_Aj1xoMPeEeyhB6X8hOAEuw" type="4001" source="_UqIcYMPcEeyNs4kwx4oFlw" target="_H8mkYMPdEeyhB6X8hOAEuw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Aj1xo8PeEeyhB6X8hOAEuw" visible="false" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Aj1xpMPeEeyhB6X8hOAEuw" x="6" y="32"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Aj1xocPeEeyhB6X8hOAEuw" fontName="Segoe UI"/>
+    <element xmi:type="Transition" href="baking.recipe#//@transitions.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Aj1xosPeEeyhB6X8hOAEuw" points="[0, 0, 12, -37]$[-14, 29, -2, -8]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AkRPcMPeEeyhB6X8hOAEuw" id="(0.53156146179402,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AkRPccPeEeyhB6X8hOAEuw" id="(0.4907749077490775,0.17391304347826086)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_CjxCAMPeEeyhB6X8hOAEuw" type="4001" source="_H8mkYMPdEeyhB6X8hOAEuw" target="_S4MIMMPdEeyhB6X8hOAEuw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_CjxCA8PeEeyhB6X8hOAEuw" visible="false" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_CjxCBMPeEeyhB6X8hOAEuw" x="29" y="36"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_CjxCAcPeEeyhB6X8hOAEuw" fontName="Segoe UI"/>
+    <element xmi:type="Transition" href="baking.recipe#//@transitions.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CjxCAsPeEeyhB6X8hOAEuw" points="[0, 0, 11, -50]$[-14, 44, -3, -6]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CjxCBcPeEeyhB6X8hOAEuw" id="(0.5645756457564576,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CjxCBsPeEeyhB6X8hOAEuw" id="(0.4334763948497854,0.039735099337748346)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_Mk-oQMPeEeyhB6X8hOAEuw" type="4001" source="_S4MIMMPdEeyhB6X8hOAEuw" target="_Fh94gMPeEeyhB6X8hOAEuw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Mk-oQ8PeEeyhB6X8hOAEuw" visible="false" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Mk-oRMPeEeyhB6X8hOAEuw" x="26" y="29"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Mk-oQcPeEeyhB6X8hOAEuw" fontName="Segoe UI"/>
+    <element xmi:type="Transition" href="baking.recipe#//@transitions.2"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Mk-oQsPeEeyhB6X8hOAEuw" points="[0, 0, 68, -40]$[-69, 29, -1, -11]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MlDgwMPeEeyhB6X8hOAEuw" id="(0.5622317596566524,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MlDgwcPeEeyhB6X8hOAEuw" id="(0.4944649446494465,0.18032786885245902)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ATCgEMPfEeyhB6X8hOAEuw" type="4001" source="_Fh94gMPeEeyhB6X8hOAEuw" target="_lSXIAMPeEeyhB6X8hOAEuw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ATCgE8PfEeyhB6X8hOAEuw" visible="false" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ATCgFMPfEeyhB6X8hOAEuw" x="29" y="27"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ATCgEcPfEeyhB6X8hOAEuw" fontName="Segoe UI"/>
+    <element xmi:type="Transition" href="baking.recipe#//@transitions.3"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ATCgEsPfEeyhB6X8hOAEuw" points="[0, 0, 36, -56]$[-45, 44, -9, -12]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ATCgFcPfEeyhB6X8hOAEuw" id="(0.5645756457564576,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ATCgFsPfEeyhB6X8hOAEuw" id="(0.42572062084257206,0.09917355371900827)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_XCFq4MPfEeyhB6X8hOAEuw" type="4001" source="_lSXIAMPeEeyhB6X8hOAEuw" target="_Pc-ToMPfEeyhB6X8hOAEuw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_XCFq48PfEeyhB6X8hOAEuw" visible="false" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_XCFq5MPfEeyhB6X8hOAEuw" x="27" y="22"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_XCFq4cPfEeyhB6X8hOAEuw" fontName="Segoe UI"/>
+    <element xmi:type="Transition" href="baking.recipe#//@transitions.4"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_XCFq4sPfEeyhB6X8hOAEuw" points="[0, 0, 40, -26]$[-39, 24, 1, -2]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XCFq5cPfEeyhB6X8hOAEuw" id="(0.5613305613305614,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XCFq5sPfEeyhB6X8hOAEuw" id="(0.5093333333333333,0.03333333333333333)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_GaKfQMPzEeyS6vRXS0Qo4A" type="4001" source="_Pc-ToMPfEeyhB6X8hOAEuw" target="_YmI3kMPfEeyhB6X8hOAEuw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_GaKfQ8PzEeyS6vRXS0Qo4A" visible="false" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_GaKfRMPzEeyS6vRXS0Qo4A" y="40"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_GaKfQcPzEeyS6vRXS0Qo4A" fontName="Segoe UI"/>
+    <element xmi:type="Transition" href="baking.recipe#//@transitions.5"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GaKfQsPzEeyS6vRXS0Qo4A" points="[0, 0, 12, -28]$[-11, 24, 1, -4]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_GaPXwMPzEeyS6vRXS0Qo4A" id="(0.49333333333333335,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_GaPXwcPzEeyS6vRXS0Qo4A" id="(0.45294117647058824,0.05)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_WK_6wMPzEeyS6vRXS0Qo4A" type="4001" source="_YmI3kMPfEeyhB6X8hOAEuw" target="_Orp0UMPzEeyS6vRXS0Qo4A">
+    <children xmi:type="notation:DecorationNode" xmi:id="_WK_6w8PzEeyS6vRXS0Qo4A" visible="false" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_WK_6xMPzEeyS6vRXS0Qo4A" y="40"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_WK_6wcPzEeyS6vRXS0Qo4A" fontName="Segoe UI"/>
+    <element xmi:type="Transition" href="baking.recipe#//@transitions.6"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WK_6wsPzEeyS6vRXS0Qo4A" points="[179, -41, -276, 67]$[299, -99, -156, 9]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WLEzQMPzEeyS6vRXS0Qo4A" id="(0.5627450980392157,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_gQdH0MPzEeyS6vRXS0Qo4A" type="4001" source="_Orp0UMPzEeyS6vRXS0Qo4A" target="_H8mkYMPdEeyhB6X8hOAEuw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_gQdH08PzEeyS6vRXS0Qo4A" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_gQdH1MPzEeyS6vRXS0Qo4A" y="40"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_gQdH0cPzEeyS6vRXS0Qo4A" fontName="Segoe UI"/>
+    <element xmi:type="Transition" href="baking.recipe#//@transitions.7"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gQdH0sPzEeyS6vRXS0Qo4A" points="[-57, -75, 22, 654]$[-316, -420, -237, 309]$[-91, -714, -12, 15]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gQdH1cPzEeyS6vRXS0Qo4A" id="(0.21481481481481482,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gQdH1sPzEeyS6vRXS0Qo4A" id="(0.04428044280442804,0.45652173913043476)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_5SFZQMPzEeyS6vRXS0Qo4A" type="4001" source="_Orp0UMPzEeyS6vRXS0Qo4A" target="_4yX-cMPzEeyS6vRXS0Qo4A">
+    <children xmi:type="notation:DecorationNode" xmi:id="_5SFZQ8PzEeyS6vRXS0Qo4A" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_5SFZRMPzEeyS6vRXS0Qo4A" x="-15" y="-22"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_5SFZQcPzEeyS6vRXS0Qo4A" fontName="Segoe UI"/>
+    <element xmi:type="Transition" href="baking.recipe#//@transitions.8"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5SFZQsPzEeyS6vRXS0Qo4A" points="[0, 0, 10, -40]$[-6, 30, 4, -10]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5SKRwMPzEeyS6vRXS0Qo4A" id="(0.5684210526315789,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5SKRwcPzEeyS6vRXS0Qo4A" id="(0.5457063711911357,0.10989010989010989)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_QFA-gMP0EeyS6vRXS0Qo4A" type="4001" source="_4yX-cMPzEeyS6vRXS0Qo4A" target="_pRoE0MPcEeyNs4kwx4oFlw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_QFA-g8P0EeyS6vRXS0Qo4A" visible="false" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_QFA-hMP0EeyS6vRXS0Qo4A" y="40"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_QFA-gcP0EeyS6vRXS0Qo4A" fontName="Segoe UI"/>
+    <element xmi:type="Transition" href="baking.recipe#//@transitions.9"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QFA-gsP0EeyS6vRXS0Qo4A" points="[0, 0, 156, -85]$[-146, 74, 10, -11]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QFF3AMP0EeyS6vRXS0Qo4A" id="(0.5875831485587583,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QFF3AcP0EeyS6vRXS0Qo4A" id="(0.5348101265822784,0.2391304347826087)"/>
+  </edges>
+</notation:Diagram>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="flowchart">
+  <steps xsi:type="SpeakAction" text="Welcome to Baking Recipe Generator!" outgoing="//@transitions.0"/>
+  <steps xsi:type="SpeakAction" text="Thanks for using Baking Recipe Generator!" incoming="//@transitions.9"/>
+  <steps xsi:type="InstructionAction" text="Please choose ingredients you have" outgoing="//@transitions.1" incoming="//@transitions.0 //@transitions.7"/>
+  <steps xsi:type="InputAction" text="Choose ingredients" outgoing="//@transitions.2" incoming="//@transitions.1">
+    <variables xsi:type="Ingredient" name="Ingredient 1" type="" amount=""/>
+    <variables xsi:type="Ingredient" name="Ingredient 2" type=""/>
+    <variables xsi:type="Ingredient" name="Ingredient 3" type=""/>
+    <variables xsi:type="Ingredient" name="Ingredient 4"/>
+    <variables xsi:type="Ingredient" name="Ingredient 5" type=""/>
+    <variables xsi:type="Ingredient" name="Ingredient 6"/>
+    <variables xsi:type="Ingredient" name="Ingredient 7" type=""/>
+    <variables xsi:type="Ingredient" name="Ingredient 8"/>
+  </steps>
+  <steps xsi:type="InstructionAction" text="Please choose devices you have" outgoing="//@transitions.3" incoming="//@transitions.2"/>
+  <steps xsi:type="InputAction" text="Choose devices" outgoing="//@transitions.4" incoming="//@transitions.3">
+    <variables xsi:type="Device" name="Device 1" type=""/>
+    <variables xsi:type="Device" name="Device 2"/>
+    <variables xsi:type="Device" name="Device 3"/>
+  </steps>
+  <steps xsi:type="InstructionAction" text="Please choose your taste preference" outgoing="//@transitions.5" incoming="//@transitions.4"/>
+  <steps xsi:type="InputAction" text="Choose taste" outgoing="//@transitions.6" incoming="//@transitions.5">
+    <variables xsi:type="Taste" name="Taste" description=""/>
+  </steps>
+  <steps xsi:type="Decision" text="Complete input?" outgoing="//@transitions.7 //@transitions.8" incoming="//@transitions.6"/>
+  <steps xsi:type="RecipeAction" text="Baking Recipe Recommendation" outgoing="//@transitions.9" incoming="//@transitions.8" ingredients="//@steps.3/@variables.0 //@steps.3/@variables.1 //@steps.3/@variables.2" devices="//@steps.5/@variables.0"/>
+  <transitions text="Next" from="//@steps.0" to="//@steps.2"/>
+  <transitions text="Next" from="//@steps.2" to="//@steps.3"/>
+  <transitions text="Next" from="//@steps.3" to="//@steps.4"/>
+  <transitions text="Next" from="//@steps.4" to="//@steps.5"/>
+  <transitions text="Next" from="//@steps.5" to="//@steps.6"/>
+  <transitions from="//@steps.6" to="//@steps.7"/>
+  <transitions from="//@steps.7" to="//@steps.8"/>
+  <transitions text="Incomplete" from="//@steps.8" to="//@steps.2"/>
+  <transitions text="Complete" from="//@steps.8" to="//@steps.9"/>
+  <transitions from="//@steps.9" to="//@steps.1"/>
+</Model>

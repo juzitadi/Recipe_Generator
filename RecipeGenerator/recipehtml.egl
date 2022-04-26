@@ -1,0 +1,25 @@
+<h1 align="center">Baking Generator Recipe: [%=r.name%]</h1>
+<h3>Temperature: [%=r.temperature%]</h3>
+<h3>Time: [%=r.time%]</h3>
+<h3>Taste: [%=r.taste.name%]</h3>
+
+<table border="1">
+<tr><td><b>Ingredient</b></td><td><b>Amount</b></td></tr>
+[% for (i in r.ingredients){%]<tr>
+	<td>[%=i.name%]</td>
+	<td>[%=i.amount%]</td>
+</tr>
+[%}%]
+</table>
+<br/>
+<br/>
+<table border="1">
+<tr><td><b>Device</b></td></tr>
+[% for (d in r.devices){%]<tr>
+	<td>[%=d.name%]</td>
+</tr>
+[%}%]
+</table>
+
+<h3><b>Baking Steps</b></h3>
+<h4>[%=r.text%]</h4>

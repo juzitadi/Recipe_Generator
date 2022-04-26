@@ -1,0 +1,106 @@
+context Decision{
+	constraint HasMoreThanOneOutgoing{
+		check: self.outgoing.size()<=2
+		
+		message: "Decision " + self.text+
+		" must have more than one"+
+		" outgoing transitions"
+	}
+}
+
+context InstructionAction{
+	constraint HasContent{
+		check: self.text.isDefined()
+	    message:"Plain"+self.eClass().name +' not allowed'
+	    }
+	    
+    critique TextStartsWithCapital {
+
+        guard : self.satisfies('HasContent')
+
+        check : self.text.firstToUpperCase() = self.text
+
+        message : 'Instruction ' + self.text +
+            ' should start with an upper-case letter'
+
+        fix {
+
+            title : 'Rename to ' + self.text.firstToUpperCase()
+
+            do {
+                self.text := self.text.firstToUpperCase();
+            }
+        }
+
+    }
+
+}
+
+
+context InputAction{
+
+	constraint HasIncomingLink{
+	check: self.incoming.isDefined() 
+	message:self.eClass().name +' should be incoming linked with other actions.'
+	}
+	
+	constraint HasOutcomingLink{
+	check: self.outcoming.isDefined() 
+	message:self.eClass().name +' should be outcoming linked with other actions.'
+	}
+
+}
+
+
+
+context Ingredient{
+	constraint HasName{
+	check: self.name.isDefined() 
+	message:'Ingredient should be defined with a name.'
+	} 
+}
+
+context Device{
+	constraint HasName{
+	check: self.name.isDefined() 
+	message:'Device should be defined with a name.'
+	} 
+}
+
+context Taste{
+	constraint HasName{
+	check: self.name.isDefined() 
+	message:'Taste should be defined with a name.'
+	} 
+
+}
+
+context RecipeAction{
+	constraint HasIngredient{
+	check: self.ingredients.isDefined() 
+	message:'Ingredients should be defined in the recipe.'
+	} 
+	
+	constraint HasTemperature{
+	check: self.temperature.isDefined() 
+	message:'Temperature should be defined in the recipe.'
+	} 
+	
+	
+	constraint HasDevice{
+	check: self.devices.isDefined() 
+	message:'Device should be defined in the recipe.'
+	} 
+	
+	constraint HasTimeRange{
+	check: self.time.isDefined() 
+	message:'Time range should be defined in the recipe.'
+	} 
+	
+	constraint HasTaste{
+	check: self.taste.isDefined() 
+	message:'Taste should be defined in the recipe.'
+	} 
+}
+
+

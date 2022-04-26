@@ -1,0 +1,7 @@
+# Tracing options for the RecipeGenerator.diagram plug-in
+
+# Common issues
+RecipeGenerator.diagram/debug=false
+
+# Visual IDs
+RecipeGenerator.diagram/debug/visualID=false

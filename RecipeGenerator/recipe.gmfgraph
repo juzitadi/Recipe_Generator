@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="recipe">
+  <figures name="Default">
+    <descriptors name="ModelFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ModelFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="ModelLabelFigure" text="Model"/>
+      </actualFigure>
+      <accessors accessor="getFigureModelLabelFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="SpeakActionFigure">
+      <actualFigure xsi:type="gmfgraph:Ellipse" name="SpeakActionFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="SpeakActionLabelFigure" text="SpeakAction"/>
+      </actualFigure>
+      <accessors accessor="getFigureSpeakActionLabelFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="InstructionActionFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="InstructionActionFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="InstructionActionLabelFigure" text="InstructionAction"/>
+      </actualFigure>
+      <accessors accessor="getFigureInstructionActionLabelFigure" figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="InputActionFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="InputActionFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="InputActionLabelFigure" text="InputAction">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="InputActionVariablesCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureInputActionLabelFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+      <accessors accessor="getInputActionVariablesCompartmentFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="RecipeActionFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="RecipeActionFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="RecipeActionLabelFigure" text="RecipeAction"/>
+      </actualFigure>
+      <accessors accessor="getFigureRecipeActionLabelFigure" figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="DecisionFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="DecisionFigure">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="128" green="255" blue="255"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="DecisionLabelFigure" text="Decision"/>
+      </actualFigure>
+      <accessors accessor="getFigureDecisionLabelFigure" figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="IngredientFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="IngredientFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="IngredientLabelFigure" text="Ingredient"/>
+      </actualFigure>
+      <accessors accessor="getFigureIngredientLabelFigure" figure="//@figures.0/@descriptors.6/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="DeviceFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="DeviceFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="DeviceLabelFigure" text="Device"/>
+      </actualFigure>
+      <accessors accessor="getFigureDeviceLabelFigure" figure="//@figures.0/@descriptors.7/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="TasteFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="TasteFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="TasteLabelFigure" text="Taste"/>
+      </actualFigure>
+      <accessors accessor="getFigureTasteLabelFigure" figure="//@figures.0/@descriptors.8/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="TransitionFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="TransitionFigure"/>
+    </descriptors>
+    <descriptors name="TransitionLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="TransitionLabelLabel" text="Transition"/>
+    </descriptors>
+  </figures>
+  <nodes name="Model" figure="ModelFigure"/>
+  <nodes name="SpeakAction" figure="SpeakActionFigure"/>
+  <nodes name="InstructionAction" figure="InstructionActionFigure"/>
+  <nodes name="InputAction" figure="InputActionFigure"/>
+  <nodes name="RecipeAction" figure="RecipeActionFigure"/>
+  <nodes name="Decision" figure="DecisionFigure"/>
+  <nodes name="Ingredient" figure="IngredientFigure"/>
+  <nodes name="Device" figure="DeviceFigure"/>
+  <nodes name="Taste" figure="TasteFigure"/>
+  <connections name="Transition" figure="TransitionFigure"/>
+  <compartments name="InputActionVariablesCompartment" figure="InputActionFigure" collapsible="true" accessor="//@figures.0/@descriptors.3/@accessors.1"/>
+  <labels name="ModelLabel" figure="ModelFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="SpeakActionLabel" figure="SpeakActionFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <labels name="InstructionActionLabel" figure="InstructionActionFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
+  <labels name="InputActionLabel" figure="InputActionFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+  <labels name="RecipeActionLabel" figure="RecipeActionFigure" accessor="//@figures.0/@descriptors.4/@accessors.0"/>
+  <labels name="DecisionLabel" figure="DecisionFigure" accessor="//@figures.0/@descriptors.5/@accessors.0"/>
+  <labels name="IngredientLabel" figure="IngredientFigure" accessor="//@figures.0/@descriptors.6/@accessors.0"/>
+  <labels name="DeviceLabel" figure="DeviceFigure" accessor="//@figures.0/@descriptors.7/@accessors.0"/>
+  <labels name="TasteLabel" figure="TasteFigure" accessor="//@figures.0/@descriptors.8/@accessors.0"/>
+  <labels name="TransitionLabel" figure="TransitionLabelFigure" elementIcon="false"/>
+</gmfgraph:Canvas>

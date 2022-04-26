@@ -1,0 +1,9 @@
+rule RECIPEHTML
+	transform r: RecipeAction{
+	
+	template: "recipehtml.egl"
+	
+	target: "recipe"+r.name+".html"
+
+
+}

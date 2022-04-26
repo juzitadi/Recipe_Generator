@@ -1,0 +1,7 @@
+var frame=new Native("javax.swing.JFrame");
+frame.setBounds(100,100,200,200);
+frame.title="Open from EOL";
+frame.visible=true;
+
+
+//InstructionAction.getAllOfType().size().println();

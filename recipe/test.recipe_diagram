@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="flowchart" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_YPif8MSkEeymI40jfxSgrA" type="Recipe" name="test.recipe_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_QxWd0MSpEey776r-M_NtSw" type="2002" fontName="Segoe UI" fillColor="8905185">
+    <children xmi:type="notation:DecorationNode" xmi:id="_QxWd0sSpEey776r-M_NtSw" type="5002"/>
+    <element xmi:type="InstructionAction" href="default.recipe#//@steps.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QxWd0cSpEey776r-M_NtSw" x="180" y="135" width="286" height="106"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_GxrTMMSqEey776r-M_NtSw" type="2001" fontName="Segoe UI" fillColor="10265827">
+    <children xmi:type="notation:DecorationNode" xmi:id="_GxrTMsSqEey776r-M_NtSw" type="5001"/>
+    <element xmi:type="SpeakAction" href="default.recipe#//@steps.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GxrTMcSqEey776r-M_NtSw" x="150" y="45" width="331" height="61"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_hQcbkMSrEeyjs_1Q50Icwg" type="2003" fontName="Segoe UI" fillColor="13420443">
+    <children xmi:type="notation:DecorationNode" xmi:id="_hQdCoMSrEeyjs_1Q50Icwg" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_hQdCocSrEeyjs_1Q50Icwg" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_nDpJQMSrEeyjs_1Q50Icwg" type="3001" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_nDpJQsSrEeyjs_1Q50Icwg" type="5006"/>
+        <element xmi:type="Ingredient" href="default.recipe#//@steps.2/@variables.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nDpJQcSrEeyjs_1Q50Icwg" x="5" y="9" width="76" height="31"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_hQcbkcSrEeyjs_1Q50Icwg"/>
+    <element xmi:type="InputAction" href="default.recipe#//@steps.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hQcbksSrEeyjs_1Q50Icwg" x="180" y="270" width="256" height="91"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_GzjQkMSsEeyTd5AGdUgCGA" type="2006" fontName="Segoe UI" fillColor="8047085">
+    <children xmi:type="notation:DecorationNode" xmi:id="_GzkesMSsEeyTd5AGdUgCGA" type="5008"/>
+    <element xmi:type="RecipeAction" href="default.recipe#//@steps.3"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GzjQkcSsEeyTd5AGdUgCGA" x="180" y="405" width="256" height="61"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_YPif8cSkEeymI40jfxSgrA"/>
+  <element xmi:type="Model" href="default.recipe#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_MM8pEMSqEey776r-M_NtSw" type="4001" source="_GxrTMMSqEey776r-M_NtSw" target="_QxWd0MSpEey776r-M_NtSw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_MM9QIMSqEey776r-M_NtSw" visible="false" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_MM9QIcSqEey776r-M_NtSw" y="40"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_MM8pEcSqEey776r-M_NtSw" fontName="Segoe UI"/>
+    <element xmi:type="Transition" href="default.recipe#//@transitions.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MM8pEsSqEey776r-M_NtSw" points="[3, 0, 0, -41]$[3, 29, 0, -12]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MM_FUMSqEey776r-M_NtSw" id="(0.5166163141993958,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MM_FUcSqEey776r-M_NtSw" id="(0.5034965034965035,0.11320754716981132)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_mDEdEMSrEeyjs_1Q50Icwg" type="4001" source="_QxWd0MSpEey776r-M_NtSw" target="_hQcbkMSrEeyjs_1Q50Icwg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_mDFEIMSrEeyjs_1Q50Icwg" visible="false" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_mDFEIcSrEeyjs_1Q50Icwg" y="40"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_mDEdEcSrEeyjs_1Q50Icwg" fontName="Segoe UI"/>
+    <element xmi:type="Transition" href="default.recipe#//@transitions.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mDEdEsSrEeyjs_1Q50Icwg" points="[0, 0, 12, -69]$[-11, 59, 1, -10]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mDG5UMSrEeyjs_1Q50Icwg" id="(0.5664335664335665,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mDG5UcSrEeyjs_1Q50Icwg" id="(0.52734375,0.10989010989010989)"/>
+  </edges>
+</notation:Diagram>

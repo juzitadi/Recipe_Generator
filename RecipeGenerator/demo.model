@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="flowchart" xmi:id="_InOl8MSyEeyHENfN9v9Rzg">
+  <steps xsi:type="SpeakAction" xmi:id="_xUBIsMSyEeyHENfN9v9Rzg" text="Welcome to Baking Recipe Generator" outgoing="_-0u7sMSyEeyHENfN9v9Rzg"/>
+  <steps xsi:type="InstructionAction" xmi:id="_4trd4MSyEeyHENfN9v9Rzg" text="Please choose ingredients you have" outgoing="_i3VnQMSzEeyHENfN9v9Rzg" incoming="_-0u7sMSyEeyHENfN9v9Rzg _usmvoMS0EeyHENfN9v9Rzg"/>
+  <steps xsi:type="InputAction" xmi:id="_D0FKkMSzEeyHENfN9v9Rzg" text="Choose ingredients" outgoing="_sqeVQMSzEeyHENfN9v9Rzg" incoming="_i3VnQMSzEeyHENfN9v9Rzg">
+    <variables xsi:type="Ingredient" xmi:id="_I24WEMSzEeyHENfN9v9Rzg" name="FLOUR" ingredient="FLOUR" amount="500g"/>
+    <variables xsi:type="Ingredient" xmi:id="_Xdmu4MSzEeyHENfN9v9Rzg" name="BUTTER" ingredient="BUTTER" amount="100g"/>
+    <variables xsi:type="Ingredient" xmi:id="_e12u0MSzEeyHENfN9v9Rzg" name="EGG" ingredient="EGG" amount="3 units"/>
+    <variables xsi:type="Ingredient" xmi:id="_MT16QMS1EeyHENfN9v9Rzg" name="SUGAR" ingredient="SUGAR" amount="500g"/>
+  </steps>
+  <steps xsi:type="InstructionAction" xmi:id="_nfSp0MSzEeyHENfN9v9Rzg" text="Please choose devices you have" incoming="_sqeVQMSzEeyHENfN9v9Rzg"/>
+  <steps xsi:type="InputAction" xmi:id="_8BLZgMSzEeyHENfN9v9Rzg" text="Choose devices" outgoing="_RQYiMMS0EeyHENfN9v9Rzg">
+    <variables xsi:type="Device" xmi:id="__WLmcMSzEeyHENfN9v9Rzg" name="ELECTRIC_MIXER" type="" device="ELECTRIC_MIXER"/>
+    <variables xsi:type="Device" xmi:id="_CWWy4MS0EeyHENfN9v9Rzg" name="OEVN"/>
+  </steps>
+  <steps xsi:type="InstructionAction" xmi:id="_FhPagMS0EeyHENfN9v9Rzg" text="Please choose your taste preference" outgoing="_dl67gMS0EeyHENfN9v9Rzg" incoming="_RQYiMMS0EeyHENfN9v9Rzg"/>
+  <steps xsi:type="InputAction" xmi:id="_T8C3MMS0EeyHENfN9v9Rzg" text="Choose taste" outgoing="_pV1fQMS0EeyHENfN9v9Rzg" incoming="_dl67gMS0EeyHENfN9v9Rzg">
+    <variables xsi:type="Taste" xmi:id="_WjhPwMS0EeyHENfN9v9Rzg" name="MORE_SWEET"/>
+  </steps>
+  <steps xsi:type="Decision" xmi:id="_nkJfMMS0EeyHENfN9v9Rzg" text="Complete Input?" outgoing="_usmvoMS0EeyHENfN9v9Rzg _z6fw0MS0EeyHENfN9v9Rzg" incoming="_pV1fQMS0EeyHENfN9v9Rzg"/>
+  <steps xsi:type="RecipeAction" xmi:id="_GUbVgMS1EeyHENfN9v9Rzg" text="1. Mix the butter and flour; 2. Add sugar to the mixture made in the last step, remix it with electric mixer; 3. Preheat the oevn for 20 minutes 4. Make cookie in your desired shape; 5. Bake the cookie in oven for 30 minutes. 6. Done! " outgoing="_9Uiz8MS1EeyHENfN9v9Rzg" incoming="_z6fw0MS0EeyHENfN9v9Rzg" ingredients="_Xdmu4MSzEeyHENfN9v9Rzg _e12u0MSzEeyHENfN9v9Rzg _I24WEMSzEeyHENfN9v9Rzg _MT16QMS1EeyHENfN9v9Rzg" devices="__WLmcMSzEeyHENfN9v9Rzg _CWWy4MS0EeyHENfN9v9Rzg" taste="_WjhPwMS0EeyHENfN9v9Rzg" name="Cookie" temperature="USE150C_180C"/>
+  <steps xsi:type="SpeakAction" xmi:id="_0bYa4MS1EeyHENfN9v9Rzg" text="Thanks for using Baking Recipe Generator!" incoming="_9Uiz8MS1EeyHENfN9v9Rzg"/>
+  <transitions xmi:id="_-0u7sMSyEeyHENfN9v9Rzg" text="welcome->ingredient instruction" from="_xUBIsMSyEeyHENfN9v9Rzg" to="_4trd4MSyEeyHENfN9v9Rzg"/>
+  <transitions xmi:id="_i3VnQMSzEeyHENfN9v9Rzg" text="ingredient instruction -> input ingredients" from="_4trd4MSyEeyHENfN9v9Rzg" to="_D0FKkMSzEeyHENfN9v9Rzg"/>
+  <transitions xmi:id="_sqeVQMSzEeyHENfN9v9Rzg" text="input ingredients -> device instruction" from="_D0FKkMSzEeyHENfN9v9Rzg" to="_nfSp0MSzEeyHENfN9v9Rzg"/>
+  <transitions xmi:id="_RQYiMMS0EeyHENfN9v9Rzg" text="input devices -> taste instruction" from="_8BLZgMSzEeyHENfN9v9Rzg" to="_FhPagMS0EeyHENfN9v9Rzg"/>
+  <transitions xmi:id="_dl67gMS0EeyHENfN9v9Rzg" text="taste instruction -> input taste preference" from="_FhPagMS0EeyHENfN9v9Rzg" to="_T8C3MMS0EeyHENfN9v9Rzg"/>
+  <transitions xmi:id="_pV1fQMS0EeyHENfN9v9Rzg" text="finsh choosing input -> decision" from="_T8C3MMS0EeyHENfN9v9Rzg" to="_nkJfMMS0EeyHENfN9v9Rzg"/>
+  <transitions xmi:id="_usmvoMS0EeyHENfN9v9Rzg" text="Incomplete Input" from="_nkJfMMS0EeyHENfN9v9Rzg" to="_4trd4MSyEeyHENfN9v9Rzg"/>
+  <transitions xmi:id="_z6fw0MS0EeyHENfN9v9Rzg" text="Complete Input" from="_nkJfMMS0EeyHENfN9v9Rzg" to="_GUbVgMS1EeyHENfN9v9Rzg"/>
+  <transitions xmi:id="_9Uiz8MS1EeyHENfN9v9Rzg" text="recipe -> ending" from="_GUbVgMS1EeyHENfN9v9Rzg" to="_0bYa4MS1EeyHENfN9v9Rzg"/>
+</Model>

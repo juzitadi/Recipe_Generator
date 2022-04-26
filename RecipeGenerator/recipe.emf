@@ -1,0 +1,117 @@
+@namespace(
+	uri="flowchart",
+	prefix="")
+	
+package recipe;
+@gmf.diagram
+@gmf.node(label="name")
+class Model extends Step{
+	attr String name;
+	val Step[*] steps;
+	val Transition[*] transitions;
+}
+
+@gmf.link(label="text", source="from", target="to")
+class Transition{
+	attr String text;
+	ref Step#outgoing from;
+	ref Step#incoming to;
+}
+
+@gmf.node(label="text")
+abstract class Step{
+	attr String text;
+	ref Transition[*]#from outgoing;
+	ref Transition[*]#to incoming;
+}
+
+abstract class Action extends Step{
+	op Step getNext();
+}
+
+@gmf.node(figure="ellipse")
+class SpeakAction extends Action{
+}
+
+@gmf.node(figure="rounded")
+class InstructionAction extends Action{
+}
+
+@gmf.node(figure="rounded")
+class InputAction extends Action{
+	@gmf.compartment
+	val Variable[*] variables;
+}
+
+@gmf.node(figure="rectangle")
+class RecipeAction extends Action{
+	ref Ingredient[*] ingredients;
+	ref Device[*] devices;
+	ref Taste taste;
+	attr String name;
+	attr Time_Range time;
+	attr Temperature_Range temperature;
+}
+
+@gmf.node(label="name, type",label.pattern="{0}: {1}")
+abstract class Variable{
+	attr String name;
+	attr String type;
+	attr String description;
+}
+
+
+@gmf.node(figure="rounded",color="128,255,255")
+class Decision extends Step{
+	
+}
+
+class Ingredient extends Variable{
+	attr Ingredient_Type ingredient;
+	attr String amount;
+}
+
+class Device extends Variable{
+	attr Device_Type device;
+}
+
+class Taste extends Variable{
+	attr Taste_Preference taste;
+}
+
+enum Ingredient_Type{
+	MILK=1;
+	BUTTER=2;
+	SUGAR=3;
+	EGG=4;
+	CHOCOLATE=5;
+	FLOUR=6;
+	SALT=7;
+	OIL=8;
+}
+
+enum Device_Type{
+	OVEN=1;
+	ELECTRIC_MIXER=2;
+	PAN=3;
+}
+
+enum Taste_Preference{
+	MORE_SWEET=1;
+	AVERAGE=2;
+	LIGHT_SWEET=3;
+}
+
+enum Time_Range{
+	LESS_30MINS =1;
+	USE_30MINS=2;
+	OVER_30MINS=3;
+}
+
+
+enum Temperature_Range{
+	LESS_150C=1;
+	USE150C_180C=2;
+	Over_180C=3;
+}
+

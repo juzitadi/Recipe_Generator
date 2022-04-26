@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="flowchart" text="">
+  <steps xsi:type="InstructionAction" text="Please choose ingredients you have" outgoing="//@transitions.1" incoming="//@transitions.0"/>
+  <steps xsi:type="SpeakAction" text="Welcome to Baking Recipe Generator" outgoing="//@transitions.0"/>
+  <steps xsi:type="InputAction" text="Choose ingredients" incoming="//@transitions.1">
+    <variables xsi:type="Ingredient"/>
+  </steps>
+  <steps xsi:type="RecipeAction" text="Baking Recipe Recommendation"/>
+  <transitions from="//@steps.1" to="//@steps.0"/>
+  <transitions from="//@steps.0" to="//@steps.2"/>
+</Model>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="recipe" nsURI="flowchart" nsPrefix="">
+  <eClassifiers xsi:type="ecore:EClass" name="Model" eSuperTypes="#//Step">
+    <eAnnotations source="gmf.diagram"/>
+    <eAnnotations source="gmf.node">
+      <details key="label" value="name"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="steps" upperBound="-1"
+        eType="#//Step" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="transitions" upperBound="-1"
+        eType="#//Transition" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Transition">
+    <eAnnotations source="gmf.link">
+      <details key="label" value="text"/>
+      <details key="source" value="from"/>
+      <details key="target" value="to"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="from" eType="#//Step" eOpposite="#//Step/outgoing"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="to" eType="#//Step" eOpposite="#//Step/incoming"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Step" abstract="true">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="text"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="outgoing" upperBound="-1"
+        eType="#//Transition" eOpposite="#//Transition/from"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="incoming" upperBound="-1"
+        eType="#//Transition" eOpposite="#//Transition/to"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Action" abstract="true" eSuperTypes="#//Step">
+    <eOperations name="getNext" eType="#//Step"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SpeakAction" eSuperTypes="#//Action">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="ellipse"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InstructionAction" eSuperTypes="#//Action">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="rounded"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InputAction" eSuperTypes="#//Action">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="rounded"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variables" upperBound="-1"
+        eType="#//Variable" containment="true">
+      <eAnnotations source="gmf.compartment"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RecipeAction" eSuperTypes="#//Action">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="rectangle"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ingredients" upperBound="-1"
+        eType="#//Ingredient"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="devices" upperBound="-1"
+        eType="#//Device"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="taste" eType="#//Taste"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="time" eType="#//Time_Range"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="temperature" eType="#//Temperature_Range"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Variable" abstract="true">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="name, type"/>
+      <details key="label.pattern" value="{0}: {1}"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Decision" eSuperTypes="#//Step">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="rounded"/>
+      <details key="color" value="128,255,255"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ingredient" eSuperTypes="#//Variable">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ingredient" eType="#//Ingredient_Type"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="amount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Device" eSuperTypes="#//Variable">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="device" eType="#//Device_Type"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Taste" eSuperTypes="#//Variable">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="taste" eType="#//Taste_Preference"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Ingredient_Type">
+    <eLiterals name="MILK" value="1"/>
+    <eLiterals name="BUTTER" value="2"/>
+    <eLiterals name="SUGAR" value="3"/>
+    <eLiterals name="EGG" value="4"/>
+    <eLiterals name="CHOCOLATE" value="5"/>
+    <eLiterals name="FLOUR" value="6"/>
+    <eLiterals name="SALT" value="7"/>
+    <eLiterals name="OIL" value="8"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Device_Type">
+    <eLiterals name="OVEN" value="1"/>
+    <eLiterals name="ELECTRIC_MIXER" value="2"/>
+    <eLiterals name="PAN" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Taste_Preference">
+    <eLiterals name="MORE_SWEET" value="1"/>
+    <eLiterals name="AVERAGE" value="2"/>
+    <eLiterals name="LIGHT_SWEET" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Time_Range">
+    <eLiterals name="LESS_30MINS" value="1"/>
+    <eLiterals name="USE_30MINS" value="2"/>
+    <eLiterals name="OVER_30MINS" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Temperature_Range">
+    <eLiterals name="LESS_150C" value="1"/>
+    <eLiterals name="USE150C_180C" value="2"/>
+    <eLiterals name="Over_180C" value="3"/>
+  </eClassifiers>
+</ecore:EPackage>
